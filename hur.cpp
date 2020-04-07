@@ -5,8 +5,6 @@
 #include <string>
 using namespace std;
 
-#include "vector.hpp"        // vectors with components of type double
-#include "odeint.hpp"        // ODE integration routines, Runge-Kutta ...
 using namespace cpl;
 
 
