@@ -10,8 +10,11 @@ using namespace cpl;
 
 
 Vector f(const Vector& x) { 
+    \\ placeholder function
+        
+    x = abs(x)
 
-    return 0;
+    return x;
 }
 
 int main() {
