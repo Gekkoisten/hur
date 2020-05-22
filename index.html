@@ -1,0 +1,109 @@
+
+<html>
+	<head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	 <link rel="stylesheet" href="style.css">
+	 <link rel="stylesheet" href="szamszim.css">
+	<title>KRFT - Számítógépes szimulációk gyakorlat</title>
+	</head>
+	
+	<body>
+	<h1>Számítógépes szimulációk gyakorlat [szamszimf17la]</h1>
+	<p><span>Tárgyfelelős:</span> Csabai István és Stéger József (5.67), Rácz Gábor</p>
+	<p><span>Helyszín:</span> <font color='red'><strike>Északi Tömb 5.56</strike></font> Teams: Course 2019/20/2 szamszimf17la 1 - Számítógépes szimulációk</p>
+	<img src="elte.pdf" width="70%">
+
+	<p><a href="file:///C:/Users/Bal%C3%A1zs/Desktop/kutinfo/weblap/kutinfo/letoltes.html">Tóth Balázs jegyzőkönyvei</a></p>
+
+	<p><a href="file:///C:/Users/Bal%C3%A1zs/Desktop/kutinfo/weblap/kutinfo/example_notebook.slides.html#/"> Populációdinamika slideshow</a></p>
+
+	<h2>A gyakorlat teljesítésének általános feltételei</h2>
+	<p>A tárgy követelményét a 2020. II. ??-én megtartott bevezető alkalommal rögzítjük.
+	
+	<h3>Célkitűzés</h3>
+	<p>A tantárgy célja, hogy a gyakorlatban is használható bevezetőt nyújtson a tudományokban, elsősorban a fizikában használt szimulációs módszerekbe.
+	<p>A célkitűzések között szerepel a programozási ismeretek elmélyítése, az adatok vizualizációjának alapjaival történő megismerkedés, a számítógépes modellek, a szimulációk és a valóság összevetése.
+	Feladat továbbá az áttekinthető beszámolók, jegyzőkönyvek készítésének elsajátítása.
+	
+	<h3>Szükséges előismeretek</h3>
+	<ul>
+	 <li>Elméleti fizika bevezető kurzusok (mechanika, hidrodinamika, kvantummechanika)
+	 <li>Differenciálegyenletek
+	 <li>Bevezető numerikus matematika kurzus
+	 <li>C++ programozás
+	 <li>Számítógépes alapismeretek (linux alapok, ábraszerkesztés)
+	 <li>Jegyzőkönyv szerkesztés (LaTeX, képletszerkesztés)
+	</ul>
+	
+	<h3>Jegyzőkönyv</h3>
+	<p>A kitűzött feladatok megoldását jegyzőkönyvben kell ismertetni, melynek formátuma pdf dokumentum.
+	Javasoljuk, hogy a jegyzőkönyveket LaTeX-ben készítsétek el.
+	
+	<p>A jegyzőkönyv felépítésével kapcsolatban a következő vázlat követése javasolt:
+	<ul>
+	 <li>Fizikai/elméleti háttér, a probléma leírása.
+	 <li>A megoldás módszerének ismertetése.
+	 <li>Az eredmények ismertetése, diszkusszió ábrák és táblázatok segítségével.
+	 <li>A jegyzőkönyv idézi a saját kódrészleteket, melyek ha meghaladják az 5-10 sort, akkor a függelékben szerepelnek.
+	 <li>A hivatkozási jegyzék tartalmazza a felhasznált cikkek, web oldalak listáját.
+	</ul>
+	
+	<p>
+	A beérkezett jegyzőkönyveket az erre kitűzött gyakorlatokon vitatjuk meg.
+	Az időben beérkezett jegyzőkönyvek érdemjegyén javítani az év végén van lehetőség, amelyre a javítási szándékot előtte jelezni kell.
+	A jegyzőkönyvre megajánlott jegy javítása interaktív, azaz a hallgató a helyszínen a javított jegyzőkönyvére támaszkodva ismerteti a javított megoldását, és összegzi tapasztalatait.
+	A határidő lejárta után érkező jegyzőkönyvek érdemjegyén nem lehet javítani.
+	Az igazolatlan késedelem egy jegy levonással jár minden nap késéssel.
+	<p>A gyakorlati jegyeket a jegyzőkönyvekre megajánlott jegyek alapján formáljuk.
+	Abban az esetben, ha két vagy több jegyzőkönyv hiányzik, akkor a gyakorlati jegyet megtagadjuk.
+	
+	<h2>Osztályozás</h2>
+	<table>
+	 <thead>
+	  <tr><td>Ponthatár<td>Jegy
+	 </thead>
+	 <tbody>
+	  <tr><td>80% - <td> 5
+	  <tr><td>65% - <td> 4
+	  <tr><td>50% - <td> 3
+	  <tr><td>30% - <td> 2
+	 </tbody>
+	</tr>
+	</table>
+	
+	<p>Hasonló fordítási segítség adott feladatonként. Példaként az első feladat előkészítése:
+	<code class=block>
+	wget https://stegerjozsef.web.elte.hu/teaching/szamszim/sho.tgz<br>
+	tar xvzf ./sho.tgz<br>
+	cd ./HarmonikusOszcillator/<br>
+	make<br>
+	ls -l *bin
+	</code>
+	
+	
+	<h2>Ajánlott irodalom</h2>
+	
+	<p>A tananyag részben támaszkodik a University of Bulo, Richard J. Gonsalves által tartott hasonló <a href=http://www.physics.buffalo.edu/phy411-506/index.html>kurzusára</a>.
+	
+	<ul>
+	 <li><a href=http://www.aw-bc.com/catalog/academic/product/0,4096,0201506041,00.html>Introduction to Computer Simulation Methods</a> <span>H. Gould, J. Tobochnik,</span> (Addison-Wesley, 2006)
+	<!-- A könyvnek van honlapja és hozzá tartozó letölthető java kódkönyvtár //-->
+	 <li><a href=http://www.tn.tudelft.nl/tn/People/Staff/Thijssen/comphy.html>Computational Physics</a> <span>J. M. Thijssen</span> (Cambridge University Press, 1999)
+	 <li><a href=http://us.cambridge.org/titles/catalogue.asp?isbn=0521750334>Numerical Recipes in C++</a> <span>Press, Teukolsky, Vetterling, Flannery</span> (Cambridge University Press, 2002)
+	 <li><a href=http://docs.sun.com/source/806-3568/ncg_goldberg.html>What Every Computer Scientist Should Know About Floating-Point Arithmetic</a> <span>David Goldberg</span> (Computing Surveys, 1991)
+	 <li><a href=http://press.princeton.edu/titles/8704.html>A Survey of Computational Physics: Introductory Computational Science</a> <span>Rubin H. Landau, Manuel José Páez, Cristian C. Bordeianu</span>
+	 <li><a href=http://csabai.web.elte.hu/http/fizNum2/lecture/4.pdf>Közönséges differenciálegyenletek megoldása</a> <span>Csabai István</span> A fizika numerikus módszerei
+	 <li><a href=http://csabai.web.elte.hu/http/szamszim/ch3-lec1.pdf>Oscillatory motion and chaos</a> Computational physics 1.
+	 <li><a href=http://www.nrbook.com/a/bookcpdf.php>Numerical recipes</a>
+	 <li><a href=http://journals.aps.org/pr/abstract/10.1103/PhysRev.159.98>Computer "Experiments" on Classical Fluids. I. Thermodynamical Properties of Lennard-Jones Molecules</a> <span>Loup Verlet</span> (Phys. Rev. 159, 98, 1967)
+	 <li><a href=http://www.math.ust.hk/~machas/mathematical-biology.pdf>Mathematical Biology</a> <span>Jeffrey R. Chasnov</span> Jegyzet 1.1, 3.1-3.3
+	 <li><a href=http://www.tp.umu.se/ModSim/files/Modeling.pdf>Population dynamics modeling</a>
+	 <li><a href=http://mathworld.wolfram.com/LogisticEquation.html>Logisztikus egyenlet</a> <span>Mathworld</span>
+	 <li><a href=http://en.wikipedia.org/wiki/Lotka-Volterra_equation>Lotka-Volterra egyenlet</a> <span>wikipedia</span>
+	 <li><a href=http://en.wikipedia.org/wiki/Lotka-Volterra_inter-specific_competition_equations>Lotka-Volterra modell több faj kompetíciójával</a> <span>wikipedia</span>
+	 <li><a href=http://www.nature.com/nature/journal/v544/n7649/full/nature22031.html>A living mesoscopic cellular automaton made of skin scales</a> <span>Liana Manukyan et.al.</span>
+	
+	</ul>
+	
+	</body>
+	</html>
